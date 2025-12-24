@@ -490,3 +490,349 @@ img {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+/* =========================
+   PÁGINA PRODUCTOS
+========================= */
+
+/* Intro */
+.intro-productos {
+  margin: 3rem 0 2rem;
+}
+
+.intro-productos p {
+  max-width: 700px;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* Categorías */
+.categoria-producto {
+  margin-bottom: 4rem;
+}
+
+.subtitulo {
+  font-size: 1.5rem;
+  margin-bottom: 1.2rem;
+  color: #8B0000;
+}
+
+.bajada-categoria {
+  max-width: 700px;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+/* Producto destacado */
+.producto-destacado {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.producto-info h4 {
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+}
+
+.producto-info p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* Ficha técnica – bloque */
+.ficha-tecnica {
+  list-style: none;
+  padding: 1.3rem 1.4rem;
+  margin: 1.5rem 0;
+  background: #f4f4f4;
+  border: 2px solid #8B0000;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.ficha-tecnica li {
+  margin-bottom: 0.6rem;
+  font-size: 0.95rem;
+}
+
+.ficha-tecnica li:last-child {
+  margin-bottom: 0;
+}
+
+.precio {
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.pedido {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Responsive producto destacado */
+@media (min-width: 900px) {
+  .producto-destacado {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .producto-destacado img {
+    width: 45%;
+  }
+
+  .producto-info {
+    width: 55%;
+  }
+}
+
+/* =========================
+   PRODUCTOS
+========================= */
+
+.productos {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+/* Producto */
+
+.producto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+/* Imagen */
+
+.producto-imagen img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Info */
+
+.producto-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+/* Tag */
+
+.producto-tag {
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #666;
+  border: 1px solid #ccc;
+  padding: 0.3rem 0.6rem;
+  width: fit-content;
+}
+
+/* Título */
+
+.producto-info h3 {
+  font-size: 1.8rem;
+  margin: 0.5rem 0;
+}
+
+/* Descripción */
+
+.producto-descripcion {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #222;
+}
+
+/* Ficha técnica */
+
+.producto-ficha {
+  margin-top: 1.5rem;
+}
+
+.producto-ficha h4 {
+  font-size: 0.9rem;
+  margin-bottom: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.producto-ficha ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.producto-ficha li {
+  font-size: 0.95rem;
+  margin-bottom: 0.4rem;
+}
+
+/* Precio */
+
+.producto-precio {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+/* Observación */
+
+.producto-observacion {
+  font-size: 0.85rem;
+  color: #555;
+  max-width: 500px;
+}
+
+/* Botón */
+
+.producto-boton {
+  margin-top: 2rem;
+  text-decoration: none;
+  color: #000;
+  border: 1px solid #000;
+  padding: 0.8rem 1.6rem;
+  width: fit-content;
+  transition: all 0.3s ease;
+}
+
+.producto-boton:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  .producto {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
+/* =========================
+   CONTACTO
+========================= */
+
+.contacto-editorial {
+  padding: 4rem 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Intro */
+
+.intro-contacto {
+  max-width: 600px;
+  margin-bottom: 4rem;
+}
+
+.intro-contacto h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.intro-contacto p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Contenido */
+
+.contenido-contacto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+/* Texto editorial */
+
+.texto-contacto p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #222;
+  margin-bottom: 1.2rem;
+  max-width: 420px;
+}
+
+.texto-contacto a {
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px solid #000;
+}
+
+.texto-contacto a:hover {
+  opacity: 0.7;
+}
+
+/* Formulario */
+
+.formulario-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.formulario-contacto label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  padding: 0.6rem 0;
+  border: none;
+  border-bottom: 1px solid #999;
+  background: transparent;
+}
+
+.formulario-contacto input:focus,
+.formulario-contacto textarea:focus {
+  outline: none;
+  border-bottom: 1px solid #000;
+}
+
+/* Botón */
+
+.formulario-contacto .btn {
+  margin-top: 1.5rem;
+  width: fit-content;
+  padding: 0.8rem 1.6rem;
+  background: none;
+  border: 1px solid #000;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #000; /* ← esto */
+  transition: all 0.3s ease;
+}
+
+.formulario-contacto .btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  .contenido-contacto {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
