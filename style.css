@@ -857,6 +857,86 @@ img {
 }
 
 /* =========================
+   OTROS GRABADOS – SCROLL
+========================= */
+.otros-grabados {
+  margin: 5rem 0;
+}
+
+.otros-grabados h4 {
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+  color: #222;
+}
+
+.scroll-wrapper {
+  position: relative;
+}
+
+.scroll-grabados {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+
+  scroll-snap-type: x mandatory;
+}
+
+.scroll-grabados::-webkit-scrollbar {
+  height: 6px;
+}
+
+.scroll-grabados::-webkit-scrollbar-thumb {
+  background: #ddd;
+  border-radius: 4px;
+}
+
+.card-mini {
+  flex: 0 0 auto;
+  width: 160px;
+  text-decoration: none;
+  color: #222;
+
+  scroll-snap-align: start;
+}
+
+.card-mini img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.card-mini span {
+  display: block;
+  margin-top: 0.4rem;
+  font-size: 0.85rem;
+}
+
+@media (min-width: 600px) {
+  .card-mini {
+    width: 200px;
+  }
+}
+
+@media (min-width: 900px) {
+  .card-mini {
+    width: 240px;
+  }
+}
+
+.scroll-flecha {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: #999;
+  pointer-events: none;
+}
+
+
+/* =========================
    CONTACTO
 ========================= */
 
