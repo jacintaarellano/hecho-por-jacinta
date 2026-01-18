@@ -65,22 +65,25 @@ footer a:hover {
   color: #A32121;
 }
 
+
 .hero {
-  height: 80vh;
-  background: url('img/home/fondo.jpg') center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
   position: relative;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  color: white;
+  text-align: center;
 }
+
 
 .hero::after {
   content: '';
   position: absolute;
   inset: 0;
   background: rgba(0,0,0,0.35);
+  z-index: 1;
 }
 
 .hero-content {
@@ -1053,5 +1056,109 @@ img {
   .contenido-contacto {
     grid-template-columns: 1fr;
     gap: 3rem;
+  }
+}
+
+/* =========================
+   HERO SLIDER
+========================= */
+
+.hero {
+  position: relative;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.carousel {
+  position: absolute;
+  inset: 0;
+  width: 100vw;
+  height: 100%;
+  z-index: 0;
+}
+
+.carousel img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.carousel img.active {
+  opacity: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 1rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+
+  .hero {
+    height: 100vh;
+  }
+
+  .hero-content {
+    max-width: 90%;
+    padding: 0 1.2rem;
+  }
+
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .btn {
+    margin-top: 1.2rem;
+    padding: 0.7rem 1.4rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel img {
+    object-position: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero::after {
+    background: rgba(0,0,0,0.45);
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    position: relative;
+    z-index: 10;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .grid-proyectos {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .card-proyecto h3 {
+    font-size: 0.9rem;
   }
 }

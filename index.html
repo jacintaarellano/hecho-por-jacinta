@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="img/favicon.png">
 
-  <!-- Fuente legible -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 
@@ -29,63 +28,85 @@
     </nav>
   </header>
 
-  <!-- HERO -->
   <main>
-    <section class="hero">
-      <div class="hero-content">
-        <h2>Hecho por Jacinta</h2>
-        <p>Piezas únicas creadas desde el diseño, el color y lo sensible.</p>
-        <a href="productos.html" class="btn">Ver productos</a>
-      </div>
-    </section>
 
-    <!-- QUE HAGO -->
+  <!-- HERO -->
+<section class="hero">
+  <div class="carousel">
+    <img src="img/home/uso-1.jpeg" class="slide active" alt="Funda en uso">
+    <img src="img/home/uso-2.jpeg" class="slide" alt="Funda en uso">
+    <img src="img/home/uso-3.jpeg" class="slide" alt="Funda en uso">
+    <img src="img/home/uso-4.jpeg" class="slide" alt="Funda en uso">
+  </div>
+
+  <div class="hero-content">
+    <h2>Hecho por Jacinta</h2>
+    <p>Piezas únicas creadas desde el diseño, el color y lo sensible.</p>
+    <a href="productos.html" class="btn">Ver productos</a>
+  </div>
+</section>
+
+
+    <!-- INTRO -->
     <section class="intro wrap">
-      <h3 class="titulo-seccion">¿Qué es Hecho por Jacinta?</h3>
+      <h2 class="titulo-seccion">Sobre la marca</h2>
       <p>
-        Hecho por Jacinta es un proyecto personal para mostrar y vender creaciones desarrolladas durante mi etapa como estudiante de diseño. Funciona como un espacio entre portafolio y tienda, donde presento objetos hechos con atención al material, al proceso y a su uso cotidiano.
+        Hecho por Jacinta es un proyecto de objetos hechos a mano,
+        donde el diseño, el material y el uso cotidiano se encuentran.
+        Cada pieza se produce en pequeñas cantidades, cuidando el proceso
+        y los detalles.
       </p>
     </section>
 
-    <!-- PRODUCTOS DESTACADOS -->
+    <!-- Productos Destacados -->
     <section class="wrap">
-      <h3 class="titulo-seccion">Productos destacados</h3>
+      <h2 class="titulo-seccion">Productos destacados</h2>
 
-      <div class="grid-proyectos">
-        <a href="productos.html" class="card-proyecto">
-          <img src="img/productos/funda/funda-1.jpg" alt="Funda de cuaderno de cuero A5">
-          <h3>Funda de cuero para cuadernos A5</h3>
+    <div class="grid-proyectos">
+        <a href="productos/fundas.html" class="card-proyecto">
+          <img src="img/productos/funda/funda-1.jpg" alt="Funda de cuero A5">
+          <h3>Fundas de cuero para cuadernos</h3>
         </a>
 
-        <a href="productos/escarabajo.html" class="card-proyecto">
-          <img src="img/productos/grabados/escarabajo-1.jpg" alt="Grabado Escarabajo">
-          <h3>Grabado Escarabajo</h3>
-        </a>
-
+        <a href="productos/escarabajo.html" class="card-proyecto"> 
+          <img src="img/productos/grabados/escarabajo-1.jpg" alt="Grabado Escarabajo"> 
+          <h3>Grabado Escarabajo</h3> </a> 
+          
         <a href="productos/corazon.html" class="card-proyecto">
-          <img src="img/productos/grabados/corazon-1.jpg" alt="Grabado Corazón Realista">
-          <h3>Grabado Corazón Realista</h3>
+        <img src="img/productos/grabados/corazon-1.jpg" alt="Grabado Corazón Realista">
+        <h3>Grabado Corazón Realista</h3>
         </a>
-      </div>
-    </section>
 
-    <!-- SOBRE LA MARCA -->
+        <a href="productos/pescado.html" class="card-proyecto">
+          <img src="img/productos/grabados/pescado-3.jpg" alt="Grabado de Pescado">
+          <h3>Grabado Pescado</h3>
+        </a>
+
+      </div>
+</section>
+
+    <!-- SOBRE MÍ -->
     <section class="sobre-mi">
-      <h3>Sobre mí</h3>
+      <h2>Sobre mí</h2>
 
       <div class="sobre-mi-contenido">
-         <img src="img/home/firma-jarellano.jpeg" alt="Jacinta Arellano" class="perfil">
+        <img src="img/home/firma-jarellano.jpeg" alt="Jacinta Arellano" class="perfil">
 
         <div class="texto">
           <p>
             Soy Jacinta, diseñadora en formación.
-            Trabajo desde la exploración material,
-            el hacer manual y la atención al detalle.
-            Cada objeto es producido en pequeñas cantidades.
+            Trabajo desde el hacer manual, la exploración material
+            y la atención al detalle.
           </p>
         </div>
       </div>
     </section>
+
+    <!-- CTA FINAL -->
+    <section class="wrap" style="text-align:center; margin-bottom:4rem;">
+      <a href="productos.html" class="btn">Explorar todos los productos</a>
+    </section>
+
   </main>
 
   <!-- FOOTER -->
@@ -95,6 +116,8 @@
       <a href="contacto.html">Contacto</a>
     </p>
   </footer>
+
+  <script src="script.js"></script>
 
 </body>
 </html>
